@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import time
 import os
 import urllib.request
 import argparse
@@ -82,8 +81,6 @@ def download_wallpapers(list_of_urls):
 
 
 if __name__ == '__main__':
-    start_time = time.time()
-
     parser = parse_args()
     image_size = parser.parse_args().size
     needed_date = parser.parse_args().date
